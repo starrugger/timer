@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:text="start"
+        tools:visibility="visible"
+        android:visibility="invisible"
+       />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginLeft="-88dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@+id/button_start_pause"
+        android:text="reset"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/assign"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="260dp"
+        android:layout_toRightOf="@id/time"
+        android:text="Assign"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Enter Time "
+        android:textColor="#C60808"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_countdown"
+        android:layout_marginBottom="15dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tagMinutes"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text_view_countdown"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="-49dp"
+        android:layout_toRightOf="@id/time"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Minutes"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/seconds"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_countdown"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/tagMinutes"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tagSeconds"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text_view_countdown"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-49dp"
+        android:layout_toRightOf="@id/seconds"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Seconds"
+        android:textSize="10sp" />
+</RelativeLayout>
